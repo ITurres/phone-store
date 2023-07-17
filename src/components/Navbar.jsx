@@ -1,7 +1,7 @@
 import { CartIcon } from '../icons';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 
-export const Navbar = () => {
+const Navbar = () => {
   const { amount } = useSelector((state) => state.cart); //? state = store
 
   return (
@@ -16,3 +16,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
